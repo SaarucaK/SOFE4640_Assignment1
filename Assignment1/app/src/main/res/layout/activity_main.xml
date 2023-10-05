@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inputPrincipalAmount"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:hint="@string/hintPrincipal"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inputInterestRate"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/principalAmountLabel"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/labelPrincipal"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/inputPrincipalAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/interestRateLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/inputInterestRate"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="@string/hintInterest"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/termLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="@+id/inputTerm"
+        app:layout_constraintTop_toTopOf="@+id/labelInput"
+        app:layout_constraintVertical_bias="0.964" />
+
+    <TextView
+        android:id="@+id/interestRateLabel"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:text="@string/labelInterest"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/inputInterestRate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/termLabel"
+        app:layout_constraintTop_toBottomOf="@+id/inputPrincipalAmount"
+        app:layout_constraintVertical_bias="0.967" />
+
+    <TextView
+        android:id="@+id/termLabel"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="328dp"
+        android:text="@string/labelTerm"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/inputTerm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/inputTerm"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:hint="@string/hintTerm"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.151" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="204dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="448dp"
+        android:text="@string/calcButton"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/variableInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="179dp"
+        android:background="#CAE3EF"
+        android:paddingLeft="50dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:text="@string/variableInfo"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.943" />
+
+    <TextView
+        android:id="@+id/labelInput"
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:background="#126782"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:paddingRight="30dp"
+        android:text="@string/mortgageDetails"
+        android:textColor="#CAE3EF"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

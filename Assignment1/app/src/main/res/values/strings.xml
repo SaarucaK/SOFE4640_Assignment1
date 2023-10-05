@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Assignment1</string>
+    <string name="calcButton">Calculate</string>
+    <string name="variableInfo">Principal: Mortgage amount\n\nInterest: Percentage interest rate \n\nTerm: Amount tenure in years
+    </string>
+    <string name="emi">EMI - Equal Monthly Installments ($)</string>
+    <string name="labelPrincipal">Principal ($)</string>
+    <string name="hintPrincipal">Enter principal...</string>
+    <string name="labelInterest">Annual interest rate (%)</string>
+    <string name="hintInterest">Enter interest rate...</string>
+    <string name="labelTerm">Term (years)</string>
+    <string name="hintTerm">Enter term...</string>
+    <string name="mortgageDetails">My Mortgage Details</string>
+    <string name="labelMortgageDetails">Mortgage Details</string>
+    <string name="labelInterestRate">Interest (%)</string>
+    <string name="labelResults">My Payment Results</string>
+</resources>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MortgageResults">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="212dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="464dp"
+        android:background="#8ECAE6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="199dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="212dp"
+        android:background="#CAE3EF"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/showPayment"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:text="TextView"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/showTerm"
+        app:layout_constraintStart_toStartOf="@+id/showTerm"
+        app:layout_constraintTop_toTopOf="@+id/labelPayment" />
+
+    <TextView
+        android:id="@+id/labelPayment"
+        android:layout_width="172dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="500dp"
+        android:text="@string/emi"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelVariables"
+        android:layout_width="fill_parent"
+        android:layout_height="87dp"
+        android:background="#126782"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:text="@string/labelMortgageDetails"
+        android:textColor="#BEE3EF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/space2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/labelResults"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="384dp"
+        android:background="#126782"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:text="@string/labelResults"
+        android:textColor="#BEE3EF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelPrincipal"
+        android:layout_width="165dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="136dp"
+        android:text="@string/labelPrincipal"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/showPrincipal"
+        app:layout_constraintEnd_toEndOf="@+id/labelTerm"
+        app:layout_constraintStart_toStartOf="@+id/labelTerm"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/labelTerm"
+        android:layout_width="165dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="200dp"
+        android:text="@string/labelTerm"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/showTerm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelInterest"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/labelInterest"
+        android:layout_width="165dp"
+        android:layout_height="35dp"
+        android:text="@string/labelInterestRate"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/showInterest"
+        app:layout_constraintEnd_toEndOf="@+id/labelPrincipal"
+        app:layout_constraintStart_toStartOf="@+id/labelPrincipal"
+        app:layout_constraintTop_toBottomOf="@+id/labelPrincipal"
+        app:layout_constraintVertical_bias="0.937" />
+
+    <TextView
+        android:id="@+id/showTerm"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="28dp"
+        android:text="TextView"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showInterest" />
+
+    <TextView
+        android:id="@+id/showInterest"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/showTerm"
+        app:layout_constraintStart_toStartOf="@+id/showTerm"
+        app:layout_constraintTop_toBottomOf="@+id/showPrincipal" />
+
+    <TextView
+        android:id="@+id/showPrincipal"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="144dp"
+        android:text="TextView"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/showInterest"
+        app:layout_constraintStart_toStartOf="@+id/showTerm"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="fill_parent"
+        android:layout_height="57dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelVariables" />
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="71dp"
+        android:layout_marginTop="256dp"
+        app:layout_constraintBottom_toTopOf="@+id/labelResults"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelVariables"
+        app:layout_constraintVertical_bias="1.0">
+
+    </Space>
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="fill_parent"
+        android:layout_height="105dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
